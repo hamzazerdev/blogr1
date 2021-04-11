@@ -5,7 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blogr</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" media="screen and (min-width: 400px)" href="style.css">
+    <link rel="stylesheet" media="screen and (max-width: 400px)" href="smallscreen.css">
+   
     <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Overpass:wght@300;400;700&display=swap" rel="stylesheet">
 
@@ -17,6 +19,13 @@
            <div class="title">
             <h5>Blogr</h5>
            </div>
+           <div class="burger">
+               <div class="inner-burger">
+               <div class="line" id="top"></div>
+               <div class="line" id="mid"></div>
+               <div class="line" id="bot"></div>
+            </div>
+           </div>
          
          <div class="navbar">
           <div class="nav">
@@ -26,13 +35,18 @@
              </div>
           </div>
           <div class="nav">
-            <div class="inner-nav">
+            <div class="inner-nav" id="inner1">
                 <h5>Company</h5>
-                <img src="icon-arrow-light.svg" alt="arrow">
+                <img src="icon-arrow-light.svg" alt="arrow" id="arrow" class="arrow">
+                <div class="pop" id="pop">
+                    <a href="" class="apop">Contact</a>
+                    <a href="" class="apop">Newsletter</a>
+                    <a href="" class="apop">Linkedln</a>
+                </div>
                </div>
         </div>
         <div class="nav">
-        <div class="inner-nav">
+        <div class="inner-nav" >
             <h5>Connect</h5>
             <img src="icon-arrow-light.svg" alt="arrow">
            </div>
@@ -51,7 +65,8 @@
       
 
        <div class="quotes">
-         <h1 class="quote1">A modern publishing plateforme</h1>
+           <h1 class="quote1m">A modern <br>  publishing plateform</h1>
+         <h1 class="quote1">A modern  publishing plateform</h1>
          <h5 class="quote2">Grow your audience and buid yout online brand</h5>
        </div>
 
@@ -72,12 +87,16 @@
     <div class="intro-title">
         <h1>Designed for the future</h1>
     </div>
+    <div class="intro-img">
+        <img src="illustration-editor-mobile.svg" alt="">
+    </div>
     <div class="container-txt">
         <div class="txt">
             <div class="txt1">
                 <div class="tit1">
                     <h5>Introduicing an extensible editor</h5>
                 </div>
+               
                 <p>
                  Blogr deatures an exceedingly intuitive interface which lets you focus <br> on one thing : creating content. The editor supports managements of <br> multiple blogs and allows easy manipulation of embeds sich as images, <br> videos, and Markdown . Extensibility with plugins and themes provide easy ways to add functionality or change the looks of a blog . 
                 </p>
@@ -153,5 +172,6 @@
 
 
 </footer>
+<script src="navbar.js"></script>
 </body>
 </html>
