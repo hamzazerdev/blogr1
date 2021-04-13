@@ -14,6 +14,7 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  border-radius: 0px 0px 0px 100px;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -53,6 +54,10 @@ body {
   font-family: 'Overpass', sans-serif;
   color: white;
   font-size: 2.9vw;
+}
+
+.banner .inner-banner .navbar-title-login .burger {
+  display: none;
 }
 
 .banner .inner-banner .navbar-title-login .navbar {
@@ -115,6 +120,98 @@ body {
 
 .banner .inner-banner .navbar-title-login .navbar .nav .inner-nav:hover {
   background-color: #f2f2f254;
+}
+
+.banner .inner-banner .navbar-title-login .navbar .nav #inner1 {
+  position: relative;
+}
+
+.banner .inner-banner .navbar-title-login .navbar .nav #inner1 .arrow {
+  -webkit-transition: all 0.15s ease-in;
+  transition: all 0.15s ease-in;
+}
+
+.banner .inner-banner .navbar-title-login .navbar .nav #inner1 .arrow1 {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.banner .inner-banner .navbar-title-login .navbar .nav #inner1 .pop {
+  position: absolute;
+  top: 25px;
+  right: 0;
+  background-color: white;
+  border-radius: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+  height: 0px;
+  -webkit-transition-duration: 0.03s;
+          transition-duration: 0.03s;
+}
+
+.banner .inner-banner .navbar-title-login .navbar .nav #inner1 .pop .apop {
+  font-family: 'Overpass', sans-serif;
+  color: transparent;
+  font-size: 0vw;
+  margin: 0px;
+  text-decoration: none;
+  margin-left: 10px;
+  text-align: left;
+  display: none;
+}
+
+.banner .inner-banner .navbar-title-login .navbar .nav #inner1 .pop .apop:hover {
+  font-weight: bold;
+}
+
+.banner .inner-banner .navbar-title-login .navbar .nav #inner1 .pop1 {
+  position: absolute;
+  top: 25px;
+  right: -25%;
+  background-color: white;
+  border-radius: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 150%;
+  height: 15vh;
+}
+
+.banner .inner-banner .navbar-title-login .navbar .nav #inner1 .pop1 .apop1 {
+  font-family: 'Overpass', sans-serif;
+  color: black;
+  font-size: 1vw;
+  margin: 10px;
+  text-decoration: none;
+  margin-left: 10px;
+  text-align: left;
+  display: block;
+}
+
+.banner .inner-banner .navbar-title-login .navbar .nav #inner1 .pop1 .apop1:hover {
+  font-weight: bold;
 }
 
 .banner .inner-banner .navbar-title-login .login-signup {
@@ -185,6 +282,11 @@ body {
 .banner .inner-banner .navbar-title-login .login-signup .signup:hover {
   -webkit-transform: scale(1.05);
           transform: scale(1.05);
+  background-color: #fc99a1;
+}
+
+.banner .inner-banner .navbar-title-login .login-signup .signup:hover h5 {
+  color: white;
 }
 
 .banner .inner-banner .quotes {
@@ -204,6 +306,10 @@ body {
   width: 100%;
   height: 30%;
   margin-top: 5%;
+}
+
+.banner .inner-banner .quotes .quote1m {
+  display: none;
 }
 
 .banner .inner-banner .quotes h1 {
@@ -286,6 +392,12 @@ body {
 .banner .inner-banner .start-learn .inner-start-learn .start:hover {
   -webkit-transform: scale(1.05);
           transform: scale(1.05);
+  background-color: #fc99a1;
+  border: 1px solid #fc99a1;
+}
+
+.banner .inner-banner .start-learn .inner-start-learn .start:hover h5 {
+  color: white;
 }
 
 .banner .inner-banner .start-learn .inner-start-learn .learn {
@@ -317,6 +429,11 @@ body {
 .banner .inner-banner .start-learn .inner-start-learn .learn:hover {
   -webkit-transform: scale(1.05);
           transform: scale(1.05);
+  background-color: white;
+}
+
+.banner .inner-banner .start-learn .inner-start-learn .learn:hover h5 {
+  color: #ff4457;
 }
 
 .intro {
@@ -363,6 +480,10 @@ body {
   font-size: 3vw;
   margin: 5px;
   margin-top: 20px;
+}
+
+.intro .intro-img {
+  display: none;
 }
 
 .intro .container-txt {
